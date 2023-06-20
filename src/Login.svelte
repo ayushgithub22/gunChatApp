@@ -17,10 +17,21 @@
       }
     });
   }
+
+  function signupPage(pageURL) {
+    window.location.href = pageURL;
+  }
 </script>
-<label for="username">Username</label>
-<input name="username" bind:value={username} minlength="3" maxlength="16" placeholder="Enter your username" />
-<label for="password">Password</label>
-<input name="password" bind:value={password} type="password" placeholder="Enter your password" />
-<button class="login" on:click={login}>Login</button>
-<button class="signup"  on:click={signup}>Sign Up</button>
+
+<div class="loginMain">
+  <h1><span class="apkName">#HASH</span><br>Privacy Like Never Before</h1>
+  
+  <div  class="loginClass">
+      <label for="username">Username</label>
+      <input name="username" bind:value={username} minlength="3" maxlength="16" placeholder="Enter your username" />
+      <label for="password">Password</label>
+      <input name="password" bind:value={password} type="password" placeholder="Enter your password" />
+      <button class="login" on:click={login}>Login</button><br>
+      <button class="signup"  on:click={() => signupPage('Signup.html')}>Sign Up</button>
+  </div>
+</div>
