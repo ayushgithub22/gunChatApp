@@ -90,6 +90,7 @@
             border-radius: 15px;
             border: none;
             margin-top: 70px;
+            cursor: pointer;
         }
         input{
             font-size: 25px;
@@ -112,15 +113,16 @@
         <div class="formBox">
             <h2>Signup</h2>
             <input type="text" placeholder="Enter your name">
-            <input type="text" placeholder="Enter your username">
-            <input type="password" placeholder="Enter your password">
+            <input name="username" bind:value={username} minlength="3" maxlength="16" placeholder="Enter your username" />
+            <input name="password" bind:value={password} type="password" placeholder="Enter your password" />
             <input type="password" placeholder="Confirm your password">
             <button onclick="navii()">Signup</button>
         </div>
     </div>
 </body>
+<!-- <script src="../src/user.js" defer></script> -->
 <script>
-    //import { user } from '../src/user';
+    // import signup from '../src/Login.svelte'
 
     function navii(){
         window.location.href = 'index.html'
