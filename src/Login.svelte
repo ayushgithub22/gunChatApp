@@ -20,21 +20,28 @@
 
   // new function
   let showNameInput = false;
+  
+  
 
   function signup() {
-  if (showNameInput) {
-    // Perform signup logic with name input
-    user.create(username, password, ({ err }) => {
-      if (err) {
-        alert(err);
-      } else {
-        login();
-      }
-    });
-  } else {
-    // Show name input box
-    showNameInput = true;
-  }
+      if (showNameInput) {
+        var pass1 = document.getElementById("pass1").value
+        var pass2 = document.getElementById("pass2").value
+        if(pass1 === pass2){
+          // Perform signup logic with name input
+          user.create(username, password, ({ err }) => {
+            if (err) {
+              alert(err);
+            } else {
+              login();
+            }
+          });
+        }
+        else{alert("Wrong Password!")}
+    } else {
+      // Show name input box
+      showNameInput = true;
+    }
 }
 
 
@@ -44,7 +51,15 @@
 </script>
 
 <div class="loginMain">
-  <h1><span class="apkName">#HASH</span><br>Privacy Like Never Before</h1>
+  <div>
+    <h1><span class="apkName">#HASH</span><br>Privacy Like Never Before</h1>
+    <ul>
+      <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
+      <li>Lorem ipsum dolor sit.</li>
+      <li>Lorem ipsum dolor sit amet consectetur.</li>
+      <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+  </div>
   
   <div  class="loginClass">
 
@@ -56,12 +71,12 @@
       <label for="username">Username</label>
       <input name="username" bind:value={username} minlength="3" maxlength="16" placeholder="Enter your username" />
       <label for="password">Password</label>
-      <input name="password" bind:value={password} type="password" placeholder="Enter your password" />
+      <input id="pass1" name="password" bind:value={password} type="password" placeholder="Enter your password" />
 
       <!-- newcode -->
       {#if showNameInput}
         <label for="name">Name</label>
-        <input type="password" name="name" placeholder="Confirm your password" />
+        <input id="pass2" type="password" name="name" placeholder="Confirm your password" />
       {/if}
 
       {#if !showNameInput}

@@ -4,18 +4,25 @@
     align-items: center;
 }
 .loginMain h1{
-    font-size: 85px;
+    font-size: 35px;
     /* width: 200px; */
     color: white;
-    margin-left: 30px;
+    margin-left: 0px;
     text-align: left;
 }
 .apkName{
     /* text-align: left; */
-    margin-left: 25px;
-    font-size: 120px;
+    margin-left: 0px;
+    font-size: 150px;
     font-weight: 800;
     color: whitesmoke;
+}
+.loginMain ul{
+    font-size: 25px;
+    /* width: 200px; */
+    color: white;
+    margin-left: 0px;
+    text-align: left;
 }
 .loginClass{
     background-color: #3b364e;
