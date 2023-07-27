@@ -8,7 +8,7 @@
 </script>
 
 <header>
-<h1>#Hash</h1>
+<h1 id="headerIcon">#</h1>
   {#if $username}
     <div class="user-bio">
       
