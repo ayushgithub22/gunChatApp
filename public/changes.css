@@ -10,12 +10,33 @@
     margin-left: 0px;
     text-align: left;
 }
-.apkName{
-    /* text-align: left; */
+@font-face {
+    font-family: thisWho;
+    src: url(gun-chat-main/Assets/ThisIsWhoWeAre-2y0o.ttf);
+}
+.apkName {
+    /* Your existing styles here */
+    text-align: left;
     margin-left: 0px;
+    /* font-family: thisWho; */
+    text-shadow: 5px 5px 5px rgb(0, 255, 13);
+    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
     font-size: 150px;
     font-weight: 800;
-    color: whitesmoke;
+    color: #000;
+    animation: blinkShadow 0.5s infinite; /* Adding the animation to the element */
+}
+@keyframes blinkShadow {
+    0% {
+        text-shadow: 0px 0px 15px rgb(0, 255, 13);
+    }
+    50% {
+        text-shadow: none; /* Shadow will disappear at 50% */
+    }
+    100% {
+        text-shadow: 0px 0px 15px rgb(0, 255, 13); /* Shadow will reappear at 100% */
+    }
 }
 .loginMain ul{
     font-size: 25px;
@@ -23,6 +44,7 @@
     color: white;
     margin-left: 0px;
     text-align: left;
+    list-style: circle;
 }
 .loginClass{
     background-color: #3b364e;

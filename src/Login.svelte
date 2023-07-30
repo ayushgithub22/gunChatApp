@@ -54,10 +54,10 @@
   <div>
     <h1><span class="apkName">#HASH</span><br>Privacy Like Never Before</h1>
     <ul>
-      <li>Lorem ipsum dolor sit amet consectetur adipisicing.</li>
-      <li>Lorem ipsum dolor sit.</li>
-      <li>Lorem ipsum dolor sit amet consectetur.</li>
-      <li>Lorem ipsum dolor sit amet.</li>
+      <li>⭕ Welcome to Hash!</li>
+      <li>⭕ Here we like to protext your privacy by not storing the<br>&nbsp; &nbsp; &nbsp; data anywhere but your own device.</li>
+      <li>⭕ Make sure you don't Mis-Use this App!</li>
+      <li>⭕ Have fun, freely!</li>
     </ul>
   </div>
   
