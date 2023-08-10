@@ -50,8 +50,26 @@ input:disabled {
 
 body {
 	background-color: #252525;
+	/* background-color: #3ca479; */
+	/* background-image: url(https://media.istockphoto.com/id/865457032/vector/abstract-futuristic-cyberspace-with-binary-code-matrix-background-with-digits-well-organized.jpg?s=612x612&w=0&k=20&c=IQcdedY8fn_DMq6nwc5MaHUBe0H0d5DPyibHR8J2usk=); */
+	/* background-repeat: no-repeat; */
+	/* background-size: cover; */
+	/* background-color: rgba(0, 0, 0, 0.5); */
 }
-  
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('https://media.istockphoto.com/id/865457032/vector/abstract-futuristic-cyberspace-with-binary-code-matrix-background-with-digits-well-organized.jpg?s=612x612&w=0&k=20&c=IQcdedY8fn_DMq6nwc5MaHUBe0H0d5DPyibHR8J2usk=');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: rgba(0, 0, 0, 0.7); /* Change the alpha (fourth) value to adjust opacity */
+    opacity: 0.5; /* Adjust this opacity value as desired */
+    z-index: -1; /* Place the pseudo-element below the content */
+}
 .app {
 	text-align: center;
 	max-width: 100vw;
@@ -60,6 +78,7 @@ body {
   
 header {
 	background-color: #181717;
+	/* background-color: #287052; */
 	height: 10vh;
 	min-height: 50px;
 	color: white;
